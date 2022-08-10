@@ -1,38 +1,102 @@
-.App {
+body{
+  margin: 10px;
+  padding: 0%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  /* gap: 10px; */
+  background-color: #ffffff;
+  padding: 10px;
+}
+.grid-block {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid black; */
+  /* text-align: center; */
+  /* align-items: center; */
+  font-size: 15px;
+  width: 95%;
+  height: 65vh;
+}
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.livebar{
+  height: 40.6vh;
+}
+/* --------------------------- */
+
+.linkText img{
+  margin-right: 15px;
+}
+/* ------------------------ */
+.mainheader{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainheader p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 56px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ------------------------------------ */
+.mainbody{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 15vh;
 }
-
-.App-link {
-  color: #61dafb;
+.mainbody span{
+  margin: 0px 40px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Coffe{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 58px;
+}
+.bary{
+  font-family: 'Inter';
+  Font-style: Regular;
+  Font-size: 25px;
+}
+.glass {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 52px;
+}
+/* ------------------------ */
+.appleBlock{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.apple{
+  margin-top: 30px;
+  z-index: 0;
+}
+.apple img{
+  width: 140%;
+  height: 15vh;
+}
+.apple2{
+  display: flex;
+  justify-content: right;
+  padding-right: 250px;
+}
+.apple2 img {
+  z-index: 0;
+}
+/* ------------------------------ */
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+  Font-family: Inter;
+  Font-style: Medium;
+  font-size: 30px;
 }
