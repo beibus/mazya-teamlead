@@ -128,6 +128,13 @@ export default function Promo() {
           </div>
         </div>
       </div>
+      <div className="discount">
+        <div className="take-discount">
+          <p className="sale-discount">Весь июль со скидкой в 50%! </p>
+          <p className="bring-cup">Принеси с собой кружку и получи свой кофе с 50% скидкой! </p>
+        </div>
+        <a href="#">Как добраться</a>
+      </div>
     </div>
   );
 }
