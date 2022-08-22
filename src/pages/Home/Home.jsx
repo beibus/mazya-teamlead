@@ -1,6 +1,6 @@
 import React from 'react'
-import TopContainer from '../../components/TopContainer/TopContainer'
-import MidContainer from '../../components/MidContainer/MidContainer'
+import TopContainer from '../../Components/TopContainer/TopContainer'
+import MidContainer from '../../Components/MidContainer/MidContainer'
 
 export const Home = () => {
   return (
