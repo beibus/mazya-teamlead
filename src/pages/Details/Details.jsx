@@ -1,23 +1,48 @@
 // import logo from './logo.svg';
 import './Details.css';
-import SierraImage from '../../Images/Sierrapic.png'
-import Call from '../../Images/Vector.png'
-import Adress from '../../Images/AdressLogo.png'
-import Hours from '../../Images/WorkingHours.png'
-import Like from '../../Images/LikeLogo.png'
-import Rectangle from '../../Images/Rectangle.png'
-import Menu from '../../Images/Menu.png'
-import Venera from '../../Images/Venera.png'
-import Aisulu from '../../Images/Aisulu.png'
-import Tom from '../../Images/Tom.png'
-import Valeria from '../../Images/Valeria.png'
-import Artur from '../../Images/Artur.png'
+import PlaceInfo from '../../Components/PlaceInfo/PlaceInfo'
+import AboutPlace from '../../Components/AboutPlace/AboutPlace'
+import PlaceMenu from '../../Components/PlaceMenu/PlaceMenu'
+import PlaceReviews from '../../Components/PlaceReviews/PlaceReviews'
+import React, {useEffect, useState} from 'react'
+// import SierraImage from '../../Images/Sierrapic.png'
+// import Call from '../../Images/Vector.png'
+// import Adress from '../../Images/AdressLogo.png'
+// import Hours from '../../Images/WorkingHours.png'
+// import Like from '../../Images/LikeLogo.png'
+// import Rectangle from '../../Images/Rectangle.png'
+// import Menu from '../../Images/Menu.png'
+// import Venera from '../../Images/Venera.png'
+// import Aisulu from '../../Images/Aisulu.png'
+// import Tom from '../../Images/Tom.png'
+// import Valeria from '../../Images/Valeria.png'
+// import Artur from '../../Images/Artur.png'
 
 function Details() {
+  const [place, setPosts]=useState([])
+ const fetchData=()=>{
+  fetch("https://still-forest-37543.herokuapp.com/1/")
+  .then(response=>{
+    return response.json()
+  })
+  .then(data=> {
+    setPosts(data)
+  })
+ }
+ useEffect(()=>{
+  fetchData()
+  console.log(place.description)
+ }, [])
   return (
+    
 
     <section className="upperContainer">
-        <div className="mainInfo">
+      
+      <PlaceInfo />
+      <AboutPlace description={place.description}/>
+      <PlaceMenu/>
+      <PlaceReviews/>
+        {/* <div className="mainInfo">
           <div className="headerInfo">
             <h2>Кофейня <br></br>Sierra Coffee</h2>
           </div>
@@ -90,7 +115,7 @@ function Details() {
           <div>
           <img className="rectangleImage"src={Rectangle} />
           </div>
-        </div>
+        </div> */}
         
     </section>
   

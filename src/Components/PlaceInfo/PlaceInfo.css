@@ -1,0 +1,15 @@
+.mainInfo{
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+}
+.Details-box{
+    display: flex;
+    flex-direction: column;
+}
+.Details-container{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    padding-top: 10px
+}
