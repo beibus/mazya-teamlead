@@ -7,7 +7,13 @@
 }
 .Details-container{
     display: flex;
-    
+    width: 30%;
+    justify-content: space-between;
+    padding-top: 10px
+}
+.Details-box{
+    display: flex;
+    flex-direction: column;
 }
 
 .likeLogo{
@@ -51,4 +57,3 @@
     margin-left: 222px;
     height: 30%;
 }
-

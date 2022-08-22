@@ -21,6 +21,7 @@ function Details() {
           <div className="headerInfo">
             <h2>Кофейня <br></br>Sierra Coffee</h2>
           </div>
+          <div className="Details-box">
             <div className="Details-container">
               <div className="contactLogo"> <img src={Call} /></div>
               <div className="contactnumber"><span>+996(312)31-15-06</span></div>
@@ -33,6 +34,7 @@ function Details() {
               <div className="contactLogo"><img src={Hours}/></div>
               <div className="contactnumber">Режим работы 08.00-00.00</div>
             </div>
+          </div>
             <div className="placeInfo">
               <h2>О ЗАВЕДЕНИИ</h2>
               <p>“SIERRA”-это уютная кофейня с тихой атмосферой, ненавязчивой музыкой и приглушённым светом - все, что позволяет расслабиться.
