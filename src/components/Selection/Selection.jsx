@@ -20,15 +20,20 @@ export const Selection = (props) => {
     fetchData()
   }, [])
 
+  const selection = category.results;
+  console.log(category.results);
+
+  if (!selection) return 'Loading...'
 
   return (
     <div>
       <div>
-        <h3>{props.category}</h3>
+        {/* <h3>{props.category}</h3> */}
         <Button/>
       </div>
       <div>
-        {category.map(item => (
+        {category &&
+        selection.map(item => (
             <Card
             logo = {item.logo}
             id = {item.id}
