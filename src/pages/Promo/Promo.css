@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.allPromoNews {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  margin: 80px;
+}
+.promoBlock {
+  margin-bottom: 150px;
+}
+
+.promoAndNews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.promoH2 {
+  margin-top: 224px;
+  /* width: 270px; */
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 60px;
+}
+.promoMonth {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.newDate {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.newSierra {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.newSpeciality {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.newsText {
+  width: inherit;
+  height: 57px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.newsBtn {
+  width: 245px;
+  height: 35px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid #111010;
+  font-size: 18px;
+}
+.newsImages {
+  margin-bottom: 45px;
+}
+.newsImage1 {
+  width: 420px;
+  height: 293px;
+  background: #d9d9d9;
+  margin-right: 10px;
+}
+.newsImage2 {
+  width: 420px;
+  height: 293px;
+  background: #d9d9d9;
+  margin-right: 10px;
+}
+.newsImage3 {
+  width: 420px;
+  height: 293px;
+  background: #d9d9d9;
+}
+.newsButton {
+  margin-top: 35px;
+}
+
+.newsFooter {
+  display: flex;
+  justify-content: space-between;
+}
+.newsAbout {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+.newsContact {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+.newsDelivery {
+  width: 305px;
+  height: 40px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  margin-right: 80px;
+  text-decoration: none;
+}

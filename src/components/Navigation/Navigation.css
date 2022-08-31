@@ -1,0 +1,21 @@
+.Navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.Navigation-options {
+  font-size: 21px;
+line-height: 25px;
+}
+
+.Navigation-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Option {
+  margin-right: 2vw;
+}
+
+.Option-right {
+  margin-left: 2vw;
+}
