@@ -1,42 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Nunito&display=swap');
 
-.upperContainer{
-    display: flex;
-    justify-content: space-between;
+.whole-container{
     font-family: 'Inter', sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-.Details-container{
+.details-container{
     display: flex;
-    width: 30%;
+    width: 65%;
     justify-content: space-between;
-    padding-top: 10px
 }
-.Details-box{
-    display: flex;
-    flex-direction: column;
+.about-place{
+    margin-top: 130px;
 }
-
-.likeLogo{
-    float: right;
-}
-.upperContainer{
-    width: 100%;
-}
-.mainInfo{
-    margin-left: 90px;
-    display: flex;
-    flex-direction: column;
-}
-.mainImage{
-    margin-right: 80px;
-}
-.likeLogo{
-    margin-right: 50px;
-
-}
-.reviewsText{
+.upper-container{
     display: flex;
     justify-content: space-between;
+}
+.place-reviews{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-lower-container{
+    display: flex;
+    flex-direction: column;
 }
 .reviewslist{
     display: flex;
@@ -44,16 +32,17 @@
     border-radius: 37px;
     background: #F3F3F3;
     width: 600px    ;
-    padding: 10px;
-    margin-top: 12px;
-
-
+    padding: 20px;
+    margin-top: 22px;
 }
-.placeInfo{
-    margin-top: 300px;
+.lower-container{
+    display: flex;
+    justify-content: space-between;
 }
 .rectangleImage{
     margin-top: 130px;
     margin-left: 222px;
-    height: 30%;
-}
+    height: 1100px;
+    margin-right: 10px;
+    width: 400px;
+} 
