@@ -1,5 +1,7 @@
 // import logo from './logo.svg';
 import './Details.css';
+
+import React, { useEffect, useState } from 'react'
 import SierraImage from '../../Images/Sierrapic.png'
 import Call from '../../Images/Vector.png'
 import Adress from '../../Images/AdressLogo.png'
@@ -12,43 +14,71 @@ import Aisulu from '../../Images/Aisulu.png'
 import Tom from '../../Images/Tom.png'
 import Valeria from '../../Images/Valeria.png'
 import Artur from '../../Images/Artur.png'
+import Navigation from '../../Components/Navigation/Navigation';
 
 function Details() {
+  const [place, setPosts] = useState([])
+  const fetchData = (props) => {
+    fetch("https://still-forest-37543.herokuapp.com/4/")
+      .then(response => {
+        return response.json()
+      })
+      .then(data => {
+        setPosts(data)
+      })
+  }
+  useEffect(() => {
+    fetchData()
+    console.log(place.description)
+  }, [])
   return (
 
-    <section className="upperContainer">
-        <div className="mainInfo">
-          <div className="headerInfo">
-            <h2>Кофейня <br></br>Sierra Coffee</h2>
+
+    <section className="whole-container">
+      <Navigation />
+      <div className="upper-container">
+        <div className="left-container">
+          <div className="place-name">
+            <h2>Кофейня <br></br>{place.name}</h2>
           </div>
-            <div className="Details-container">
-              <div className="contactLogo"> <img src={Call} /></div>
-              <div className="contactnumber"><span>+996(312)31-15-06</span></div>
-            </div>
-            <div className="Details-container">
-              <div className="adressLogo"><img src={Adress}/></div>
-              <div className="adressName">пр. Манаса, 57 А, ул. Киевская</div>
-            </div>
-            <div className="Details-container">
-              <div className="contactLogo"><img src={Hours}/></div>
-              <div className="contactnumber">Режим работы 08.00-00.00</div>
-            </div>
-            <div className="placeInfo">
-              <h2>О ЗАВЕДЕНИИ</h2>
-              <p>“SIERRA”-это уютная кофейня с тихой атмосферой, ненавязчивой музыкой и приглушённым светом - все, что позволяет расслабиться.
-              Это место для людей, которые ценят европейскую и мексиканскую кухню, высокий стандарт обслуживания.
-              Для приготовления блюд мы используем исключительно свежие, натуральные продукты.
-              Будем рады видеть вас у нас в гостях!</p>
-            </div>
-            <div className="Carousel">
-            <h2>МЕНЮ</h2>
-            <img src={Menu}/>
-            </div>
-            <div className="reviewsText">
-              <div className="reviewsCount"><h2>ОТЗЫВЫ (43)</h2></div>
-              <div className="reviewsLeave"><span>Как оставить отзыв?</span></div>
-            </div>
-            <div className='reviewsDisplay'>
+          <div className="details-container">
+            <div className="details-icon"><img src={Call} /></div>
+            <div className="details-info"><span>{place.phone_numbers}</span></div>
+          </div>
+          <div className="details-container">
+            <div className="details-icon"><img src={Adress} /></div>
+            <div className="details-info"><span>{place.address}</span></div>
+          </div>
+          <div className="details-container">
+            <div className="details-icon"><img src={Hours} /></div>
+            <div className="details-info"><span>Режим работы: {place.openning_times}</span></div>
+          </div>
+        </div>
+        <div className="right-container">
+          <div><img src={SierraImage} /></div>
+        </div>
+
+      </div>
+
+      <div className="lower-container">
+        <div className="left-lower-container">
+          <div className="about-place">
+            <h2>О ЗАВЕДЕНИИ</h2>
+          </div>
+          <div className="place-description">
+            <p>{place.description}</p>
+          </div>
+          <div className="place-menu">
+            <h2>МЕНЮ</h2> 
+          </div>
+          <div className="place-menu-image">
+            <img src={place.menu_image}/>
+          </div>
+          <div className="place-reviews">
+            <div className="place-reviews-count"><h2>ОТЗЫВЫ:({place.review})</h2></div>
+            <div className="place-reviews-leave"><span>Как оставить отзыв?</span></div>
+          </div>
+          <div className='reviewsDisplay'>
               <div className="reviewslist">
                 <div><img src={Venera}/></div> 
                 <div><h3>Венера</h3></div> 
@@ -76,22 +106,15 @@ function Details() {
                 <div><p>Превосходный кофе с мягким вкусом и комфортная зона для работы и времяпровождения</p></div> 
               </div>
             </div>
-
         </div>
-        <div className="mainImage">
-          <div className="likeLogo">
-          <img src={Like}/>
-          </div>
-          <div>
-          <img src={SierraImage}/>
-          </div>
+        <div className="right-lower-container">
           <div>
           <img className="rectangleImage"src={Rectangle} />
           </div>
         </div>
-        
+      </div>
     </section>
-  
+
   );
 }
 
