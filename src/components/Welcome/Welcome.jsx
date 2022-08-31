@@ -1,6 +1,6 @@
 import React from 'react'
 import './Welcome.css'
-import vilki from '../../images/vilki.png'
+import vilki from '../../Images/vilki.png'
 
 
 

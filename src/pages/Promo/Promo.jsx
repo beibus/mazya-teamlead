@@ -1,8 +1,8 @@
 import React from "react";
 import "./Promo.css";
-import NewsImages from "../src/images/img1.png";
-import NewsImages2 from "../src/images/img2.png";
-import NewsImages3 from "../src/images/img3.png";
+import NewsImages from "../../Images/img1.png";
+import NewsImages2 from "../../Images/img2.png";
+import NewsImages3 from "../../Images/img3.png";
 export default function Promo() {
   return (
     <div className="allPromoNews">

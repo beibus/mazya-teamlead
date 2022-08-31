@@ -1,5 +1,5 @@
 import React from 'react'
-import salad from '../../images/salad.png'
+import salad from '../../Images/salad.png'
 import './MidContainer.css'
 
 const MidContainer = () => {

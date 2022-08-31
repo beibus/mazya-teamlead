@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Nunito&display=swap');
+
+.whole-container{
+    font-family: 'Inter', sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.details-container{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+.about-place{
+    margin-top: 130px;
+}
+.upper-container{
+    display: flex;
+    justify-content: space-between;
+}
+.place-reviews{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-lower-container{
+    display: flex;
+    flex-direction: column;
+}
+.reviewslist{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 37px;
+    background: #F3F3F3;
+    width: 600px    ;
+    padding: 20px;
+    margin-top: 22px;
+}
+.lower-container{
+    display: flex;
+    justify-content: space-between;
+}
+.rectangleImage{
+    margin-top: 130px;
+    margin-left: 222px;
+    height: 1100px;
+    margin-right: 10px;
+    width: 400px;
+} 

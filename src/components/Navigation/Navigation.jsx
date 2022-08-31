@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navigation.css'
-import heart from '../../images/heart.png'
-import user from '../../images/user.png'
+import heart from '../../Images/heart.png'
+import user from '../../Images/user.png'
 
 const Navigation = () => {
   return (
