@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+h1 {
+  font-size: 48px;
+line-height: 58px;
+margin: 0;
+}
+
+.App {
+  font-family: 'Inter', sans-serif;
+
+}
+
+.Top-container {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  background-color: #358B97;
+}
+
+.Top-banner {
+  display: flex;
+  height: 70vh;
+  width: 20%;
+  background-color: #358B97;
+}
+
+.Top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4vh;
+  height: 52vh;
+  width: 60%;
+  align-self: flex-end;
+  background-color: white;
+}
+
+
+
+

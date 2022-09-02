@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import RestarauntCard from '../../Components/RestarauntCard/RestarauntCard'
+import RestarauntCard from '../../components/RestarauntCard/RestarauntCard'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
