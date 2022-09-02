@@ -15,11 +15,13 @@ import Tom from '../../Images/Tom.png'
 import Valeria from '../../Images/Valeria.png'
 import Artur from '../../Images/Artur.png'
 import Navigation from '../../Components/Navigation/Navigation';
+import { useParams } from 'react-router-dom'
 
 function Details() {
+  const { id } = useParams()
   const [place, setPosts] = useState([])
   const fetchData = (props) => {
-    fetch("https://still-forest-37543.herokuapp.com/4/")
+    fetch(`https://still-forest-37543.herokuapp.com/${id}/`)
       .then(response => {
         return response.json()
       })

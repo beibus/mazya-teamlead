@@ -1,16 +1,16 @@
 import React from 'react'
 
-function SelectionCard(image, title, count,key) {
+function SelectionCard({image, title, count}) {
   return (
-    <div key={key}>
+    <div>
         <div className="place-image">
             <img src={image}/>
         </div>
         <div className="place-title">
-            <h2>{title}</h2>
+            <h2>{title} </h2>
         </div>
         <div className="place-count">
-            <span>{count}</span>
+            <span>{count} </span>
         </div>
     </div>
   )
