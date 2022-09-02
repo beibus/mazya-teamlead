@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/mazya-teamlead/static/css/main.8744c2ac.css",
+    "main.js": "/mazya-teamlead/static/js/main.4c641fd4.js",
+    "static/media/salad.png": "/mazya-teamlead/static/media/salad.8a6244f456b5fe84b941.png",
+    "static/media/Sierrapic.png": "/mazya-teamlead/static/media/Sierrapic.4c761f1c01d8a9b61b5b.png",
+    "static/media/Menu.png": "/mazya-teamlead/static/media/Menu.33237c68808a595f0ebd.png",
+    "static/media/Artur.png": "/mazya-teamlead/static/media/Artur.806bb9c232b909f205a0.png",
+    "static/media/Valeria.png": "/mazya-teamlead/static/media/Valeria.a79f217c8f7b5acc0c7c.png",
+    "static/media/Venera.png": "/mazya-teamlead/static/media/Venera.29ae74cd221f69bde3a7.png",
+    "static/media/Tom.png": "/mazya-teamlead/static/media/Tom.ab4fa9ed793121b418e3.png",
+    "static/media/Aisulu.png": "/mazya-teamlead/static/media/Aisulu.6678340173d5dd482a0d.png",
+    "index.html": "/mazya-teamlead/index.html",
+    "main.8744c2ac.css.map": "/mazya-teamlead/static/css/main.8744c2ac.css.map",
+    "main.4c641fd4.js.map": "/mazya-teamlead/static/js/main.4c641fd4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8744c2ac.css",
+    "static/js/main.4c641fd4.js"
+  ]
+}
