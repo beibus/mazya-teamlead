@@ -14,7 +14,7 @@ import Aisulu from '../../Images/Aisulu.png'
 import Tom from '../../Images/Tom.png'
 import Valeria from '../../Images/Valeria.png'
 import Artur from '../../Images/Artur.png'
-import Navigation from '../../Components/Navigation/Navigation';
+import Navigation from '../../components/Navigation/Navigation';
 import { useParams } from 'react-router-dom'
 
 function Details() {
@@ -31,8 +31,10 @@ function Details() {
   }
   useEffect(() => {
     fetchData()
-    console.log(place.description)
+    console.log(place)
   }, [])
+
+  if (!place) return
   return (
 
 

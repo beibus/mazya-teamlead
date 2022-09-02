@@ -3,8 +3,7 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
 import SierraImage from '../../Images/Sierrapic.png'
-
-import RestarauntCard from '../../Components/RestarauntCard/RestarauntCard'
+import RestarauntCard from '../../components/RestarauntCard/RestarauntCard'
 
 
 

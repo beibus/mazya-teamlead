@@ -7,7 +7,7 @@ const Navigation = () => {
   return (
     <div className='Navigation'>
         <div className='Navigation-options'>
-          <a className='Option' href="#news">Главная</a>
+          <a className='Option' href='/'>Home</a>
           <select className='Option' name="select" id="selectPlace">
             <option value="" selected disabled hidden>Все заведения</option>
             <option value="Cafe">Кафе</option>
@@ -16,7 +16,7 @@ const Navigation = () => {
             <option value="Bar">Бары</option>
             <option value="Nightclub">Ночные клубы</option>
           </select>
-          <a className='Option' href="#about">Акции</a>
+          <a className='Option' href="/Promo">Акции</a>
         </div>
         <div className='Navigation-icons'>
           <div className='Option-right'><img src={heart} alt="" /></div>

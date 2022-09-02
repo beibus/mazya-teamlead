@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Promo.css";
 import Promocard from "./pormocomponent/Promocard";
+import Navigation from "../../components/Navigation/Navigation";
 
 export default function Promo() {
   const [sales, setSales] = useState([]);
@@ -21,6 +22,7 @@ export default function Promo() {
   console.log("sales", sales);
   return (
     <div className="allPromoNews">
+      <Navigation/>
       <div className="promoBlock">
         <div className="promoAndNews">
           <h1 className="promoH2">
