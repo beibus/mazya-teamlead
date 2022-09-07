@@ -10,7 +10,7 @@ const Navigation = () => {
           <a className='Option' href='/'>Home</a>
           <select className='Option' name="select" id="selectPlace">
             <option value="" selected disabled hidden>Все заведения</option>
-            <option value="Cafe">Кафе</option>
+            <option value="Cafe" >Кафе</option>
             <option value="Restaurant">Рестораны</option>
             <option value="Cofeeshop">Кофейни</option>
             <option value="Bar">Бары</option>

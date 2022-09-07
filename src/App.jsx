@@ -6,6 +6,7 @@ import Promo from './pages/Promo/Promo'
 import Footer from './components/Footer/Footer'
 import Selections from './containers/Selections/Selections';
 import SelectionExact from './containers/Selections/SelectionExact';
+import CategoryExactPage from './components/CategoryPage/CategoryExactPage'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="promo" element={<Promo />}/>
         <Route path="selection" element={<Selections />}/>
         <Route path="selection/:id" element={<SelectionExact />}/>
+        <Route path="category/:id" element={<CategoryExactPage/>}/>
         </Routes>
     </div>
   );

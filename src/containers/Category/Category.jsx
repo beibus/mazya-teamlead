@@ -58,7 +58,12 @@ function Category() {
                     <div  >
                         <div className='category-header'>
                             <h2>{place.name}</h2>
+                            <Link
+                        key={place.id}
+                        to={`/category/${place.id}`}
+                        >
                             <div><button>See all...</button></div>
+                        </Link>
                         </div>
                         <div className='selection-exact-wrapper'>
                         {place.restaurants.map(item=>(
