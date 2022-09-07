@@ -3,9 +3,9 @@ import {Routes, Route, Link} from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Details from './pages/Details/Details'
 import Promo from './pages/Promo/Promo'
-import Footer from './Components/Footer/Footer'
-import Selections from './Containers/Selections/Selections';
-import SelectionExact from './Containers/Selections/SelectionExact';
+import Footer from './components/Footer/Footer'
+import Selections from './containers/Selections/Selections';
+import SelectionExact from './containers/Selections/SelectionExact';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="home" element={<Home />}/>
-        <Route path="details/:id" element={<Details />}/>
+        <Route path="/details/:id" element={<Details />}/>
         <Route path="promo" element={<Promo />}/>
         <Route path="selection" element={<Selections />}/>
         <Route path="selection/:id" element={<SelectionExact />}/>
@@ -23,3 +23,4 @@ function App() {
   );
 }
 export default App;
+

@@ -5,8 +5,7 @@ import {Link} from 'react-router-dom'
 import SierraImage from '../../Images/Sierrapic.png'
 import './SelectionExact.css'
 
-
-import RestarauntCard from '../../Components/RestarauntCard/RestarauntCard'
+import RestarauntCard from '../../components/RestarauntCard/RestarauntCard'
 
 
 
