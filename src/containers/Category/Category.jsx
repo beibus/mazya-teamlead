@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import RestarauntCard from '../../components/RestarauntCard/RestarauntCard'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import './Category.css'
 
 
 function Category() {
@@ -43,8 +44,8 @@ function Category() {
     // console.log('CatITEM',catItem)
     if (!places) return 'Loading...'
     return (
-        <div>
-            <div className='title'>
+        <div className='category-container'>
+            <div >
 
                 {/* {places.map(item=>{
                     <div>
@@ -54,18 +55,19 @@ function Category() {
                     </div>
                 })} */}
                 {places.map(place => (
-                    <div>
-                        <div>
+                    <div  >
+                        <div className='category-header'>
                             <h2>{place.name}</h2>
+                            <div><button>See all...</button></div>
                         </div>
-                        <div>
+                        <div className='selection-exact-wrapper'>
                         {place.restaurants.map(item=>(
                                 <Link
                                     key={item.id}
                                     to={`/details/${item.id}`}
                                 >
                                     <RestarauntCard
-                                        image={item.logo}
+                                        image={'https://nambafood.kg/image/125x125/146201.png'}
                                         name={item.name}
                                         address={item.address}
                                         key={item.id}
@@ -81,7 +83,7 @@ function Category() {
 
             </div>
 
-            <div><button>See all...</button></div>
+            
         </div>
     )
 }

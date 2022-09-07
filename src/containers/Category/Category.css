@@ -1,9 +1,11 @@
-.category-container{
-    height: 100vh;
-    border: 1px solid black;
-}
-.title{
-    border: 1px solid black;
-    height: 300px;
-    width: 200px;
+ .category-container{
+    /* height: 100vh; */
+    /* border: 1px solid black; */
+    padding: 20px 45px;
+} 
+
+.category-header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }

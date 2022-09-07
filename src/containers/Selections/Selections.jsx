@@ -61,6 +61,7 @@ function Selections() {
     console.log(places.id)
 
     return (
+        
         <div className="selections-grid-container">
             {places.map(item => {
                     return (
@@ -69,7 +70,7 @@ function Selections() {
                         to={`/selection/${item.id}`}
                         >
                             <SelectionCard
-                                image={item.image}
+                                image={'https://nambafood.kg/image/468x318/54942.png'}
                                 title={item.name}
                                 count={item.id}
                                 key={item.id}
