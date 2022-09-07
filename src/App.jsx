@@ -18,7 +18,6 @@ function App() {
         <Route path="selection" element={<Selections />}/>
         <Route path="selection/:id" element={<SelectionExact />}/>
         </Routes>
-        <Footer/>
     </div>
   );
 }

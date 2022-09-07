@@ -16,7 +16,8 @@ const Navigation = () => {
             <option value="Bar">Бары</option>
             <option value="Nightclub">Ночные клубы</option>
           </select>
-          <a className='Option' href="/Promo">Акции</a>
+          <a className='Option' href="#/promo">Акции</a>
+          <a className='Option' href="#/selection">Подборки</a>
         </div>
         <div className='Navigation-icons'>
           <div className='Option-right'><img src={heart} alt="" /></div>
