@@ -8,19 +8,19 @@ function RestarauntCard({image,name,address}) {
   return (
     <div className="place-wrapper">
             <div className="place-image">
-                <img src={image} />
+                <img  className="image-content" src={image} />
             </div>
             <div className="contacts-wrapper">
                 <div className="contact-item">
                     <img src={Call} alt="" />
-                    <h2>{address}</h2>
+                    <h2>{name}</h2>
                     <img src={heart} alt="" />
                 </div>
                 <div className="contact-item">  
                     <img src={Adress} alt="" />
-                    <h2>{name}</h2>
+                    <h2>{address}</h2>
                 </div>
-                <div className="contact-item">
+                <div className="contact-btn">
                     <button>Подробнее</button>
                 </div>
             </div>

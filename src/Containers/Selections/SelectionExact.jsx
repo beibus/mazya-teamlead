@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
 import SierraImage from '../../Images/Sierrapic.png'
+import './SelectionExact.css'
+
 
 import RestarauntCard from '../../Components/RestarauntCard/RestarauntCard'
 
@@ -61,7 +63,7 @@ function SelectionExact() {
     ]
     if (!places) return null
     return (
-        <div>
+        <div className='selection-exact-wrapper'>
             {places2.map(item => {
                     return (
                         <Link
@@ -69,7 +71,7 @@ function SelectionExact() {
                         to={`/details/${item.id}`}
                         >
                             <RestarauntCard
-                                image={item.image}
+                                image={'https://nambafood.kg/image/125x125/75651.png'}
                                 number={item.number}
                                 Adress={item.adress}
                                 key={item.id}
