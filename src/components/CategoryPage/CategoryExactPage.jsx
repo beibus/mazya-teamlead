@@ -3,13 +3,13 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import SierraImage from '../../Images/Sierrapic.png'
-import './SelectionExact.css'
+import '../../containers/Selections/SelectionExact.css'
 
 import RestarauntCard from '../../components/RestarauntCard/RestarauntCard'
 
 
 
-function SelectionExact() {
+function CategoryExactPage() {
 
     const [places, setPlaces] = useState([])
     const [error, setError] = useState(null)
@@ -23,7 +23,7 @@ function SelectionExact() {
     const fetchData = async () => {
         setLoading(true)
         try {
-            const url = `https://restaurantkg.herokuapp.com/?selection=${id}&category=`
+            const url = `https://restaurantkg.herokuapp.com/?category=${id}`
             const response = await axios.get(url);
             console.log('url', url)
             if (response.data.errors) {
@@ -39,11 +39,9 @@ function SelectionExact() {
             setLoading(false)
         }
     }
-    console.log('places', places)
-    console.log('places results', places.results)
+    console.log('places', places.results)
 
     if (!places.results) return null
-
     return (
         <div className='selection-exact-wrapper'>
             {places.results.map(item => {
@@ -67,4 +65,4 @@ function SelectionExact() {
     )
 }
 
-export default SelectionExact
+export default CategoryExactPage
