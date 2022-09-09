@@ -52,7 +52,8 @@ function CategoryExactPage() {
                     >
                         <RestarauntCard
                             image={'https://nambafood.kg/image/125x125/146201.png'}
-                            name={item.phone_numbers.join(', ')}
+                            name={''}
+                            phoneNumbers={item.phone_numbers}
                             address={item.address}
                             key={item.id}
                         />

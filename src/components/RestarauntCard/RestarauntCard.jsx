@@ -4,7 +4,8 @@ import heart from '../../Images/heart.png'
 import Call from '../../Images/Vector.png'
 import './RestarauntCard.css'
 
-function RestarauntCard({ image, name, address }) {
+function RestarauntCard({ image, name, address,phoneNumbers }) {
+    console.log(name)
     return (
         <div className="place-wrapper">
             <div className="place-image">
@@ -13,6 +14,7 @@ function RestarauntCard({ image, name, address }) {
             <div className="contacts-wrapper">
                 <div className="contact-item">
                     <img src={Call} alt="" />
+                    {phoneNumbers?.map(item=>(<span>{item.phone_number}</span>))}
                     <h2>{name}</h2>
                     <img src={heart} alt="" />
                 </div>
