@@ -24,6 +24,10 @@ export const setModalState = (state) => ({
   type: SET_MODAL_STATE,
   isOpen: state
 })
+export const setModalStateAuth = (state) => ({
+  type: SET_MODAL_STATE,
+  isOpen: state
+})
 
 
 
@@ -51,6 +55,26 @@ export const createLogin = (payload) => {
     
     try {
       const response = await axios.post(`${BASE_API_URL}auth/registration/`, payload);
+      if (response.status === 400) {
+        console.log(response)
+      } 
+    // if (response.data.errors) {
+    //     setError(response.data.errors)
+    //     setLoading(false)
+    //     return
+    //   } 
+    } 
+    catch (error) {
+      console.error('ERROR FROM API', error);
+    }
+  }
+}
+export const authLogin = (payload) => {
+    
+  return async (dispatch) => {
+
+    try {
+      const response = await axios.post(`${BASE_API_URL}auth/login/`, payload);
       if (response.status === 400) {
         console.log(response)
       } 

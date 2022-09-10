@@ -10,6 +10,7 @@ import {
     products: [],
     productsLoading: false,
     isModalOpen: false,
+    isModalAuth: false,
     isModalCreate: true,
     editProduct: null
   }

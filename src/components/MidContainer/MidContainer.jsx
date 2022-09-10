@@ -7,6 +7,7 @@ import { Modal } from 'antd';
 import Item from "antd/lib/list/Item";
 import salad from '../../Images/salad.png'
 import 'antd/dist/antd.css'
+import './MidContainer.css'
 
 
 const MidContainer = () => {
@@ -28,7 +29,7 @@ const MidContainer = () => {
 
 
 
-  const showModal = () => {
+  const showModalReg = () => {
     dispatch(setModalState(true));
 
   };
@@ -68,12 +69,15 @@ const MidContainer = () => {
   const modalTitle = 'Регистрация'
 
   return (
-    <div className='Mid-container'>
-        <div className='Mid-content'>
-          <div className='Content-title'>
+    <div className='mid-container'>
+        <div className='mid-content'>
+          <div className='content-title'>
+            <div className="title-wrapper">
             <h2>Удобно и Вкусно</h2>
+
+            </div>
           </div>
-          <div className='Content-description'>
+          <div className='content-description'>
             <h3>
               Мы являемся каталогом <span className='Green'>Chtopoest</span> ресторанов/кафе/баров/кофеен Бишкека.
               Уникальность продукта заключается в том, что каталог позволяет найти все
@@ -81,13 +85,17 @@ const MidContainer = () => {
             </h3>
           </div>
         </div>
-        <div className='Mid-image'><img src={salad} alt="" /></div>
+        <div className='mid-image'><img src={salad} alt="" /></div>
 
 
+<div className="mid-button">
 
-        <Button type="primary" onClick={showModal}>
+        <Button type="primary" onClick={showModalReg} >
         Создать Аккаунт
         </Button>
+</div>
+
+
         <Modal
         footer={null} title={modalTitle} open={isModalOpen} onCancel={closeModal}>
         <Form

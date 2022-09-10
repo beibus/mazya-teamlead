@@ -72,7 +72,7 @@ function Category() {
                                     to={`/details/${item.id}`}
                                 >
                                     <RestarauntCard
-                                        image={'https://nambafood.kg/image/125x125/146201.png'}
+                                        image='https://media-cdn.tripadvisor.com/media/photo-s/12/93/1e/4d/saloon.jpg'
                                         name={item.name}
                                         address={item.address}
                                         key={item.id}
