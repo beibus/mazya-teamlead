@@ -21,7 +21,7 @@ function Details() {
   const { id } = useParams()
   const [place, setPosts] = useState([])
   const fetchData = (props) => {
-    fetch(`https://still-forest-37543.herokuapp.com/${id}/`)
+    fetch(`https://restaurantkg.herokuapp.com/${id}/`)
       .then(response => {
         return response.json()
       })
