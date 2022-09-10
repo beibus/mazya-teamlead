@@ -8,6 +8,7 @@ import Selections from './containers/Selections/Selections';
 import SelectionExact from './containers/Selections/SelectionExact';
 import CategoryExactPage from './components/CategoryPage/CategoryExactPage'
 
+
 function App() {
   return (
     <div>
@@ -20,6 +21,7 @@ function App() {
         <Route path="selection/:id" element={<SelectionExact />}/>
         <Route path="category/:id" element={<CategoryExactPage/>}/>
         </Routes>
+        <Footer/>
     </div>
   );
 }

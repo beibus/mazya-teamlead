@@ -1,0 +1,35 @@
+.mid-container {
+    padding: 0px 45px;
+}
+
+.mid-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-title {
+display: flex;
+justify-content: space-around;
+}
+
+.content-title h2 {
+font-size: 76px;
+width: 60%;
+align-self: flex-end;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 38%;
+}
+
+.mid-image {
+    width: 60%;
+}
+
+.mid-image img {
+    width: 100%;
+}

@@ -70,7 +70,7 @@ function Selections() {
                         to={`/selection/${item.id}`}
                         >
                             <SelectionCard
-                                image={'https://nambafood.kg/image/468x318/54942.png'}
+                                image='https://media-cdn.tripadvisor.com/media/photo-s/12/93/1e/4d/saloon.jpg'
                                 title={item.name}
                                 count={item.id}
                                 key={item.id}

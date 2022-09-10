@@ -47,7 +47,8 @@ function Details() {
           </div>
           <div className="details-container">
             <div className="details-icon"><img src={Call} /></div>
-            <div className="details-info"><span>{place.phone_numbers}</span></div>
+            <div className="details-info"><span>{place.phoneNumbers?.map(item=>(<span>{item.phone_number}</span>))}</span></div>
+            
           </div>
           <div className="details-container">
             <div className="details-icon"><img src={Adress} /></div>
