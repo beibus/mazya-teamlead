@@ -24,7 +24,7 @@ const Navigation = () => {
   const fetchData = async () => {
 
     setLoading(true)
-    const url = "https://still-forest-37543.herokuapp.com/category/"
+    const url = "https://restaurantkg.herokuapp.com/category/"
 
     try {
       const response = await axios.get(url);
